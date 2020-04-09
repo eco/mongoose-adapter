@@ -1,6 +1,6 @@
 {
-  "name": "@beamnetwork/casbin-mongoose-adapter",
-  "version": "2.2.1",
+  "name": "@beamnetwork/eco-casbin-mongoose-adapter",
+  "version": "1.0.0",
   "description": "Mongoose adapter for Casbin",
   "main": "src/adapter.js",
   "license": "Apache-2.0",
