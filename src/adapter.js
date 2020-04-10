@@ -152,6 +152,19 @@ class MongooseAdapter {
   }
 
   /**
+   * Returns true if policy is loaded already.
+   * @returns {Promise<void>}
+   */
+  async hasPolicy () {
+    const docs = await CasbinRule.find({});
+    if (!docs) {
+      return false;
+    }
+
+    return docs.length > 0;
+  }
+
+  /**
    * Implements the process of loading policy from database into enforcer.
    * This method is used by casbin and should not be called by user.
    *
